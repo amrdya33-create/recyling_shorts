@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>دورها - إعادة التدوير</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #111;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+}
+
+.video {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(160deg, #dff7e7, #8ed6a5);
+}
+
+.scene {
+  width: min(430px, 100vw);
+  height: min(760px, 100vh);
+  position: relative;
+  overflow: hidden;
+  background: #f4fff7;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 25px;
+}
+
+.logo {
+  font-size: 58px;
+  font-weight: bold;
+  color: #159447;
+  animation: zoom 2s infinite alternate;
+}
+
+h1 {
+  font-size: 32px;
+  color: #173d27;
+  margin: 15px 0;
+}
+
+p {
+  font-size: 22px;
+  color: #315640;
+  line-height: 1.6;
+}
+
+.items {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  font-size: 65px;
+  margin: 25px 0;
+  animation: float 2s infinite alternate;
+}
+
+.button {
+  background: #159447;
+  color: white;
+  padding: 15px 25px;
+  border-radius: 30px;
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+@keyframes zoom {
+  from { transform: scale(1); }
+  to { transform: scale(1.08); }
+}
+
+@keyframes float {
+  from { transform: translateY(0); }
+  to { transform: translateY(-15px); }
+}
+</style>
+</head>
+
+<body>
+
+<div class="video">
+  <div class="scene">
+
+    <div class="logo">دورها ♻️</div>
+
+    <h1>لا ترميها...</h1>
+
+    <p>
+      البلاستيك والكارتون والخبز اليابس
+      ممكن يتحول إلى فائدة!
+    </p>
+
+    <div class="items">
+      🧴 📦 🍞
+    </div>
+
+    <p>
+      اعرض المواد عندك<br>
+      وخليها تدور من جديد ♻️
+    </p>
+
+    <div class="button">
+      دورها... بدل ما ترميها
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>
